@@ -1,0 +1,192 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>GameJ2MELibraryPOMLean</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>GameJ2MELibraryPOMLean</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+
+    <modules>
+
+        <!--
+        NoGyroSensorLibrary
+
+        -->
+        <!--<module>../../android/AndroidUtilJavaLibraryLeanM</module>-->
+
+        <module>../../../allbinary_src/security/SimpleCryptLibraryLeanM</module>
+        <!--
+        <module>../../../../working_thirdpartylean/security/BouncyCastleDESJavaLibraryLeanM</module>
+        <module>../../../../working_thirdpartylean/communication/XmlRpc/XmlRpcJavaLibraryLeanM</module>
+        -->
+        <module>../../../allbinary_src/TokenizerJavaLibraryLeanM</module>
+        <module>../../../allbinary_src/security/BasicSecurityJavaLibraryLeanM</module>
+        <!--<module>../../../replace_these_stub_projects/security/YourCryptFileJavaLibraryLeanM</module>-->
+        <module>../../../replace_these_stub_projects/security/YourSecurityJavaLibraryLeanM</module>
+        <module>../../../replace_these_stub_projects/communication/YourXmlRpcJavaLibraryLeanM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEOnlyJavaLibraryLeanM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MECompatibilityJavaLibraryLeanM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEJsInteropCompatibilityJavaLibraryLeanM</module>
+
+        <module>../../DebugJavaLibraryLeanM</module>             
+        <module>../../ResourceLibraryLeanM</module>
+        <module>../../ResourceJ2MEJavaLibraryLeanM</module>
+        <!--<module>../../AndroidResourceLibraryLeanM</module>-->
+        <!--<module>../../../allbinary_src/hardware/AndroidSystemJavaLibraryLeanM</module>-->
+
+        <module>../../../game/behavior/ArtificialIntelligenceLibraryLeanM</module>
+
+        <module>../../media/graphics/PlatformNullImageJavaLibraryLeanM</module>
+        <module>../../media/graphics/ImageCacheBaseJ2MEJavaLibraryLeanM</module>
+        <module>../../media/graphics/ImageCacheJ2MEJavaLibraryLeanM</module>
+        <module>../../../graphics/opengl/OpenGLJ2MENoneJavaLibraryLeanM</module>
+        <module>../../../graphics/opengl/OpenGLNoneJavaLibraryLeanM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOtherJavaLibraryLeanM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOther2JavaLibraryLeanM</module>
+        <module>../../../graphics/opengl/OpenGLESBaseJ2MEJavaLibraryLeanM</module>
+
+        <module>../../media/graphics/animation/AnimationLibraryLeanM</module>
+        <module>../../media/graphics/animation/RotationAnimationJavaLibraryLeanM</module>
+
+        <module>../../games/GameInputLibraryLeanM</module>
+
+        <module>../../games/GameScoresBaseJavaLibraryLeanM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryLeanM</module>
+
+        <module>../../statistics/ApplicationStatisticsHTMLLibraryLeanM</module>
+        <!--
+        <module>../../games/GameConfigurationHTMLJavaLibraryLeanM</module>
+        -->
+        <module>../../games/GameConfigurationJ2MEJavaLibraryLeanM</module>   
+        <module>../../games/GameConfigurationJavaLibraryLeanM</module>
+
+        <module>../../games/GameIntermissionLibraryLeanM</module>
+
+        <module>../../GroupLibraryLeanM</module>
+
+        <module>../../input/NoSensorJavaLibraryLeanM</module>
+
+        <module>../../input/AllBinarySensorJavaLibraryLeanM</module>
+
+        <module>../../input/platform/me/GameInputMEJavaLibraryLeanM</module>
+        <module>../../input/platform/me/GameInputMEKeyOnlyJavaLibraryLeanM</module>
+        <module>../../input/platform/me/GameInputMEMotionJavaLibraryLeanM</module>
+        <module>../../input/platform/pc/GameInputPCBaseJavaLibraryLeanM</module>
+        <module>../../input/platform/pc/GameInputPCJavaLibraryLeanM</module>
+        <module>../../input/platform/pc/GameInputPCKeyOnlyJavaLibraryLeanM</module>
+        <module>../../input/platform/pc/GameInputPCMotionJavaLibraryLeanM</module>
+        <module>../../input/platform/pc/GameInputSwtJavaLibraryLeanM</module>
+
+        <module>../../input/AllBinaryGyroSensorJavaLibraryLeanM</module>
+        <module>../../input/MotionGestureJavaLibraryLeanM</module>
+        
+        <module>../../input/MotionGestureBaseJavaLibraryLeanM</module>
+
+        <module>../../games/GameInputPersistanceLibraryLeanM</module>
+        <module>../../games/GameInputNoPersistanceLibraryLeanM</module>
+        
+        <module>../../lib/VectorThreeDimensionalLibraryLeanM</module>
+        <module>../../input/AllBinaryAccelerometerSensorJavaLibraryLeanM</module>
+        <module>../../input/NoGyroSensorJavaLibraryLeanM</module>
+        <module>../../input/JSEGyroSensorJavaLibraryLeanM</module>
+        <!--
+        <module>../../input/android/</module>
+        <module>../../input/platform/android/GameInputAndroidBaseJavaLibraryLeanM</module>
+        -->
+
+        <module>../../media/sound/BasicPlayerJavaLibraryLeanM</module>
+        <module>../../media/sound/BasicPlayerMIDP2JavaLibraryLeanM</module>
+        <module>../../media/sound/NoPlayerJavaLibraryLeanM</module>
+        <module>../../media/sound/SoundJ2MELibraryLeanM</module>
+
+        <module>../../media/motion/AllBinaryVibrationJavaLibraryLeanM</module>
+        <module>../../media/motion/NoVibrateJavaLibraryLeanM</module>
+        <!--<module>../../media/motion/VibrateAndroidJavaLibraryLeanM</module>-->
+
+        <module>../../media/graphics/NullCustomUIJavaLibraryLeanM</module>
+        <module>../../media/graphics/NullCustomUIBaseJavaLibraryLeanM</module>
+
+        <module>../../media/graphics/FormValidationJavaLibraryLeanM</module>
+        
+        <module>../../media/graphics/FormJavaLibraryLeanM</module>
+        <module>../../media/graphics/FormBaseJavaLibraryLeanM</module>
+        <!--
+        <module>../../media/graphics/FormJMEJavaLibraryLeanM</module>
+        -->
+        <module>../../../j2me/media/graphics/FormJMEJavaLibraryLeanM</module>
+
+        <module>../../media/graphics/animation/AnimationResourceJavaLibraryLeanM</module>
+        <module>../../media/graphics/animation/TransitionAnimationJavaLibraryLeanM</module>
+        <module>../../media/graphics/animation/NoTransitionAnimationJavaLibraryLeanM</module>
+        <!--
+        AndroidTransitionAnimationJavaLibraryM
+        -->
+        <module>../../media/graphics/animation/GameAnimationJavaLibraryLeanM</module>
+        <module>../../games/GameResourceJavaLibraryLeanM</module>
+        <module>../../games/GameSoundsJavaLibraryLeanM</module>
+
+        <module>../../input/TouchInputLibraryLeanP</module>
+
+        <module>../../media/MediaDataLeanM</module>
+        <module>../../media/sound/NotDeviceSpecificNoMediaMIDP1LibraryLeanM</module>
+
+        <module>../../../allbinary_src/content/ContentNoneJavaLibraryLeanM</module>
+        <!--<module>../../../allbinary_src/content/ContentAndroidJavaLibraryLeanM</module>-->
+
+        <module>../../games/GameConfigurationFormJavaLibraryLeanM</module>
+
+        <module>../../FullScreenNoneJavaLibraryLeanM</module>
+        <!--
+        <module>../../FullScreenJavaLibraryLeanM</module>
+        -->
+
+        <module>../../../physics/VelocityLibraryLeanM</module>
+
+        <module>../../games/weapon/SoundsBasicWeaponsJavaLibraryLeanM</module>
+
+        <module>../../lib/TrigJ2MELibraryLeanM</module>
+
+        <module>../../media/graphics/geography/map/LayerPlacementLibraryLeanM</module>
+        <module>../../media/graphics/layer/AllBinaryLayerJavaLibraryLeanM</module>
+
+        <module>../../ScreenCaptureNoneJavaLibraryLeanM</module>
+        
+        <module>../licensing/GameLicensingNullJavaLibraryLeanM</module>
+        
+        <module>../../business/advertisement/AllBinaryAdvertisementClientJavaLibraryLeanM</module>
+        <module>../../business/advertisement/AdvertisementClientNoneJavaLibraryLeanM</module>
+
+        <module>../GameNotificationJavaLibraryLeanM</module>
+
+        <module>../../../graphics/opengl/NoSWTJavaLibraryLeanM</module>
+        <module>../../../graphics/opengl/SWTWithoutJOGLJavaLibraryLeanM</module>
+        <module>../SWTJavaLibraryLeanM</module>
+        <module>../GameJ2MELibraryLeanM</module>
+        
+        <!--
+        <module>../GameJ2MEOptionalLibraryPOLeanM</module>
+        -->
+    
+    </modules>
+
+</project>
+

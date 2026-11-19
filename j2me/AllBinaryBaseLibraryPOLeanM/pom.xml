@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>AllBinaryBaseLibraryPOMLean</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>AllBinaryBaseLibraryPOMLean</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+        <module>../CommonJavaLibraryLeanM</module>
+        <module>../TempBaseJavaLibraryLeanM</module>
+        
+        <module>../../allbinary_src/LogLeanM</module>
+        <module>../../allbinary_src/allbinary_src_designpatterns_srcLeanM</module>
+        <module>../../allbinary_src/data/BaseDataJavaLibraryLeanM</module>
+        <module>../../allbinary_src/cache/BaseCacheJavaLibraryLeanM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJavaLibraryLeanM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJ2MEJavaLibraryLeanM</module>
+
+        <module>../ExceptionHTMLJavaLibraryLeanM</module>
+        <module>../J2MEExceptionLibraryLeanM</module>
+        <module>../../allbinary_src/J2SEExceptionLibraryLeanM</module>
+        <module>../J2MEUtilJavaLibraryLeanM</module>
+        <module>../J2MEColorJavaLibraryLeanM</module>
+        <module>../EventJ2MELibraryLeanM</module>
+
+        <module>../../allbinary_src/LogNoPlatformJavaLibraryLeanM</module>
+        <module>../../allbinary_src/LogJ2MEJavaLibraryLeanM</module>
+        <module>../../allbinary_src/LogJ2SEJavaLibraryLeanM</module>
+        <!--<module>../../allbinary_src/LogAndroidJavaLibraryLeanM</module>-->
+        <module>../logging/LoggingNoneLeanM</module>
+        <module>../logging/LoggingJ2MEAllLeanM</module>
+        <module>../logging/LoggingJ2MEExceptionLeanM</module>
+        <!--<module>../logging/LoggingAndroidAllLeanM</module>-->
+        <!--
+        //While it is a possible dependency option it really does not fit here
+        //as such it is actually build in the final POM builds instead
+        <module>../logging/LoggingRemoteExceptionLeanM</module>  
+        -->
+        
+        <module>../J2MEWindowingJavaLibraryLeanM</module>
+        
+        <module>../lib/BaseMathLibraryLeanM</module>
+        <module>../lib/BasicMathLibraryLeanM</module>
+        
+        <module>../../allbinary_src/ThreadLibraryLeanM</module>
+        <!--<module>../../allbinary_src/ThreadHTMLLibraryLeanM</module>-->
+        <module>../../replace_these_stub_projects/allbinary_src/NoneOnlyJavaLibraryLeanM</module>
+        <module>../../allbinary_src/ThreadJ2MELibraryLeanM</module>
+        <module>../time/TimeJavaLibraryLeanM</module>
+
+        <module>../statistics/ApplicationStatisticsJ2SELibraryLeanM</module>
+        <module>../statistics/ApplicationStatisticsJ2MELibraryLeanM</module>
+        <module>../statistics/ApplicationStatisticsJavaLibraryLeanM</module>
+
+        <module>../../allbinary_src/logging/BasicLogConfigTypeJavaLibraryLeanM</module>
+        <module>../../allbinary_src/logging/LogConfigTypeGameClientJavaLibraryLeanM</module>
+
+        <module>../../allbinary_src/hardware/HardwareLibraryPOLeanM</module>
+
+        <module>../lib/TrigBaseLibraryLeanM</module>
+
+    </modules>
+
+</project>
+
